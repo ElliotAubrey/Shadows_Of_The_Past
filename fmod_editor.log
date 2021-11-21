@@ -18,3 +18,121 @@
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
 [LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 3000928
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 49440
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000D75013EE48
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFF438F60E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFF438F60B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFF438F61B0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFF438F6270
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001FC521257A8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Gunshot 2', format=5, channels=2, frequency=48000, lengthbytes=10688, lengthpcm=65536, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.988500.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 3000928
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 49440
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000D75013EE48
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFF438F60E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFF438F60B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFF438F61B0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFF438F6270
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001FC521257A8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Gunshot 4', format=5, channels=2, frequency=48000, lengthbytes=10688, lengthpcm=65536, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.988500.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 3000928
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 49440
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000D75013EE48
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFF438F60E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFF438F60B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFF438F61B0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFF438F6270
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001FC521257A8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Gunshot 3', format=5, channels=2, frequency=48000, lengthbytes=10976, lengthpcm=65536, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.988500.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 3000928
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 49440
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000D75013EE48
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFF438F60E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFF438F60B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFF438F61B0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFF438F6270
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001FC521257A8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Gunshot 1', format=5, channels=2, frequency=48000, lengthbytes=11360, lengthpcm=65536, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.988500.
+[LOG] SoundI::release                          : Penumbra 2 (000001FD38B89298)
+[LOG] SoundI::release                          :     Penumbra 2 (000001FD0E2F83F8)
+[LOG] SoundI::release                          :     Penumbra 2 (000001FD1DFBB308)
+[LOG] SoundI::release                          : Penumbra 2 (000001FD38B8B0F8)
+[LOG] SoundI::release                          :     Penumbra 2 (000001FD393CFD88)
+[LOG] SoundI::release                          :     Penumbra 2 (000001FD743FCC68)
+[LOG] SoundI::release                          : Penumbra 2 (000001FD38B89E68)
+[LOG] SoundI::release                          :     Penumbra 2 (000001FD393CF228)
+[LOG] SoundI::release                          :     Penumbra 2 (000001FD1DFB99B8)
+[LOG] SoundI::release                          : Penumbra 2 (000001FD38B8DB28)
+[LOG] SoundI::release                          :     Penumbra 2 (000001FD0E2F8258)
+[LOG] SoundI::release                          :     Penumbra 2 (000001FD1DFBAFA8)
+[LOG] SoundI::release                          : Archived, Test Tone, White Noise SND3563 (000001FD38B8E038)
+[LOG] SoundI::release                          :     Archived, Test Tone, White Noise SND3563 (000001FD393CF088)
+[LOG] SoundI::release                          :     Archived, Test Tone, White Noise SND3563 (000001FD743FAAA8)
+[LOG] SoundI::release                          : Archived, Test Tone, White Noise SND3563 (000001FD38B88878)
+[LOG] SoundI::release                          :     Archived, Test Tone, White Noise SND3563 (000001FD0E2F8598)
+[LOG] SoundI::release                          :     Archived, Test Tone, White Noise SND3563 (000001FD1DFB92F8)
+[LOG] SoundI::release                          : Boiler Burn (000001FD38B895F8)
+[LOG] SoundI::release                          :     Boiler Burn (000001FD393CFBE8)
+[LOG] SoundI::release                          :     Boiler Burn (000001FD1DFB9808)
+[LOG] SoundI::release                          : Ship Ambient Loop (000001FD38B8A1C8)
+[LOG] SoundI::release                          :     Ship Ambient Loop (000001FD393CFA48)
+[LOG] SoundI::release                          :     Ship Ambient Loop (000001FD743FC908)
+[LOG] SoundI::release                          :  (000001FBCEAD2C58)
+[LOG] SoundI::release                          :     Gunshot 1 (000001FD1E378F18)
+[LOG] SoundI::release                          :  (000001FC0741B208)
+[LOG] SoundI::release                          :     Gunshot 2 (000001FD1E378898)
+[LOG] SoundI::release                          :  (000001FBCEAD2AE8)
+[LOG] SoundI::release                          :     Gunshot 3 (000001FD1E378A38)
+[LOG] SoundI::release                          :  (000001FBCEAD23B8)
+[LOG] SoundI::release                          :     Gunshot 4 (000001FD1E378D78)
+[LOG] SoundI::release                          :  (000001FC0741B098)
+[LOG] SoundI::release                          :     Hollowed Scream 1 (000001FC2EAD98B8)
+[LOG] SoundI::release                          :  (000001FC0741B378)
+[LOG] SoundI::release                          :     Hollowed Scream 2 (000001FC2EAD9A58)
+[LOG] SoundI::release                          :  (000001FC0741B658)
+[LOG] SoundI::release                          :     Hollowed Scream 3 (000001FC2EAD9578)
+[LOG] SoundI::release                          :  (000001FC0741B4E8)
+[LOG] SoundI::release                          :     Hollowed Scream 4 (000001FC2EAD9718)
+[LOG] Thread::callback                         : FMOD Studio update thread finished.
+[LOG] Thread::callback                         : FMOD Studio bank load thread finished.
+[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
+[LOG] Thread::callback                         : FMOD Studio sample load thread finished.
+[LOG] LiveUpdate::release                      : 
+[LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
+[LOG] Thread::callback                         : FMOD stream thread finished.
+[LOG] Thread::callback                         : FMOD mixer thread finished.
+[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
+[LOG] SystemI::close                           : Closed.
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6

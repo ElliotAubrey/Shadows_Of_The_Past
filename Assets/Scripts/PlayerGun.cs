@@ -45,6 +45,8 @@ public class PlayerGun : MonoBehaviour
         PWM = FindObjectOfType<PlayerWeaponManager>();
         pController = FindObjectOfType<PlayerController>();
         accuracyBase = accuracy;
+        Cursor.visible = false;
+        Cursor.SetCursor(cursor, Vector2.zero, CursorMode.Auto);
     }
     private void OnEnable()
     {

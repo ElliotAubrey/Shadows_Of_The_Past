@@ -17,8 +17,8 @@ public class Hearing : MonoBehaviour, IPerk
 
     public void Disable()
     {
-        vcaAll.setVolume(-55);
-        vcaHearing.setVolume(0);
+        vcaAll.setVolume(.2f);
+        vcaHearing.setVolume(.2f);
     }
 
     public void Enable()

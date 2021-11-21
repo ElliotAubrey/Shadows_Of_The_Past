@@ -72805,7 +72805,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6b02b307b222f3489ab1aa31fd46d45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deaf: {fileID: 1280476136}
 --- !u!114 &1694734182
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -73459,7 +73458,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1726030673
 MonoBehaviour:
   m_ObjectHideFlags: 0
