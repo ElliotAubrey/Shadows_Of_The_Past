@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{06e562c3-0161-4a2d-85e3-a4af84e376eb}">
+		<property name="assetPath">
+			<value>Penumbra's Call.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>35.498666666666665</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{70cd42f0-a8ab-4c80-979a-be12c4715e8d}</destination>
+		</relationship>
+	</object>
+</objects>

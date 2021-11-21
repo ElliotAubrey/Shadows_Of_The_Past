@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{f708999d-ebe9-44ee-b5d0-3af595615abb}">
+		<property name="assetPath">
+			<value>Boiler Burn.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>96</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>64</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{70cd42f0-a8ab-4c80-979a-be12c4715e8d}</destination>
+		</relationship>
+	</object>
+</objects>

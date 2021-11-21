@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{de161291-828f-4758-9c6d-3c3d6d75fda4}">
+		<property name="assetPath">
+			<value>Footsteps, Human, Metal Ladder, Sneakers SND4062.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>96</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.56737499999999996</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{70cd42f0-a8ab-4c80-979a-be12c4715e8d}</destination>
+		</relationship>
+	</object>
+</objects>

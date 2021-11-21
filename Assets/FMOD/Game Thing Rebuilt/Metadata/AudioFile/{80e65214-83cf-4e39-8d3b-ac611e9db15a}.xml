@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{80e65214-83cf-4e39-8d3b-ac611e9db15a}">
+		<property name="assetPath">
+			<value>Bullet Impact Flesh 1.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>96</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.64272916666666668</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{70cd42f0-a8ab-4c80-979a-be12c4715e8d}</destination>
+		</relationship>
+	</object>
+</objects>

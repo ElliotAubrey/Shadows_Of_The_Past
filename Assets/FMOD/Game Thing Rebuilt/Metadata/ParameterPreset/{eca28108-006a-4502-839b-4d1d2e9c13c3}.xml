@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="ParameterPreset" id="{eca28108-006a-4502-839b-4d1d2e9c13c3}">
+		<property name="name">
+			<value>Insanity</value>
+		</property>
+		<relationship name="folder">
+			<destination>{1689f078-c8b5-43d8-ab0b-336151e47f5b}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{2dce1dfc-d8e1-4bbc-a7ee-ea6e3db33b47}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{2dce1dfc-d8e1-4bbc-a7ee-ea6e3db33b47}">
+		<property name="maximum">
+			<value>100</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+		<property name="seekSpeed">
+			<value>57</value>
+		</property>
+	</object>
+</objects>
