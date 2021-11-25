@@ -44,6 +44,7 @@ public class PlayerController : MonoBehaviour
         speed = Input.GetKey(KeyCode.LeftShift) && stamima > 0 && !gun.reloading ? _runSpeed : _walkSpeed;
         movementDir = new Vector2 (Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")).normalized;
         mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
+        isMoving = body.velocity.magnitude != 0 ? true : false;
     }
 
     private void FixedUpdate()
@@ -66,6 +67,7 @@ public class PlayerController : MonoBehaviour
         else controller.SetBool("IsMoving", false);
         controller.SetBool("GunEquiped", gun.enabled);
         controller.SetBool("LanternEquiped", lantern.enabled);
+        controller.speed = speed == _walkSpeed ? 1 : 2;
     }
 
     public void MovementDisabled()

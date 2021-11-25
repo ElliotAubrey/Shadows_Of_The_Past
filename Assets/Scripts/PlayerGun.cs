@@ -15,11 +15,11 @@ public class PlayerGun : MonoBehaviour
     [SerializeField] TextMeshProUGUI ammoText, spareAmmoText;
     [SerializeField] LayerMask shootMask;
     [SerializeField] GameObject shootRenderer;
-    [SerializeField] Texture2D cursor;
     [SerializeField] Transform firePoint;
     [SerializeField] Light2D muzzleFlash;
     [SerializeField] Animator controller;
     [SerializeField] StudioEventEmitter gunshot, gunclick, reload;
+    [SerializeField] Texture2D cursor;
 
     public bool canFire = true;
     public bool reloading = false;
@@ -37,6 +37,7 @@ public class PlayerGun : MonoBehaviour
 
     private void Awake()
     {
+        Cursor.SetCursor(cursor, new Vector3(10.5f, 10.5f, 0), CursorMode.Auto);
         ammo = magCapasity;
         ammoText.text = ammo.ToString();
         spareAmmoText.text = spareAmmo.ToString();
@@ -45,13 +46,9 @@ public class PlayerGun : MonoBehaviour
         PWM = FindObjectOfType<PlayerWeaponManager>();
         pController = FindObjectOfType<PlayerController>();
         accuracyBase = accuracy;
-        Cursor.visible = false;
-        Cursor.SetCursor(cursor, Vector2.zero, CursorMode.Auto);
+        Cursor.visible = true;
     }
-    private void OnEnable()
-    {
-        Cursor.SetCursor(cursor, Vector2.zero, CursorMode.Auto);
-    }
+
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Mouse0) && nextFireTime <= Time.time && canFire && !controller.GetBool("IsMoving")) Fire();
@@ -64,6 +61,7 @@ public class PlayerGun : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.M)) controller.StopPlayback();
 
+        if (reloading && Input.GetKeyDown(KeyCode.Mouse0) || Input.GetKeyDown(KeyCode.R)) reloading = false;
         if (reloading && Input.GetKeyDown(KeyCode.Mouse0) || Input.GetKeyDown(KeyCode.R)) reloading = false;
 
     }
@@ -142,10 +140,6 @@ public class PlayerGun : MonoBehaviour
         controller.speed = 1;
     }
 
-    private void OnApplicationFocus(bool focus)
-    {
-        Cursor.SetCursor(cursor, Vector2.zero, CursorMode.Auto);
-    }
 
     IEnumerator DestroyLineRenderer(LineRenderer lr)
     {

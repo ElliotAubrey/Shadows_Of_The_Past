@@ -27,7 +27,6 @@ public class Sight : MonoBehaviour, IPerk
     {
         perkEnabled = false;
         vig.intensity.value = disabledI;
-        Debug.Log("Vig disabled");
     }
 
     public void Enable()

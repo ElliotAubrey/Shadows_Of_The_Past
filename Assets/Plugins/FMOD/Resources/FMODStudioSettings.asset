@@ -399,9 +399,9 @@ MonoBehaviour:
   SwitchSettingsMigration: 1
   HasSourceProject: 1
   HasPlatforms: 1
-  sourceProjectPath: Assets/FMOD/Game Thing Rebuilt/Game Thing Rebuild 2/Game Thing
-    Rebuild 2.fspro
-  sourceBankPath: Assets/FMOD/Game Thing Rebuilt/Game Thing Rebuild 2/Build
+  sourceProjectPath: Assets/FMOD/Game Thing Rebuild 4/Game Thing Rebuild 4/Game Thing
+    Rebuild 4.fspro
+  sourceBankPath: Assets/FMOD/Game Thing Rebuild 4/Game Thing Rebuild 4/Build
   SourceBankPathUnformatted: 
   BankRefreshCooldown: 5
   ShowBankRefreshWindow: 1

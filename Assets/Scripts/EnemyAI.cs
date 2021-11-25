@@ -14,8 +14,9 @@ public class EnemyAI : MonoBehaviour
     [SerializeField] AIDestinationSetter destinationSetter;
     [SerializeField] LayerMask losMask;
     [SerializeField] GameObject pointOfIntrest;
+    [SerializeField] Transform startPos;
     [SerializeField] Animator controller;
-    [SerializeField] StudioEventEmitter screams;
+    [SerializeField] StudioEventEmitter screams, attack;
 
     Transform player;
     float nextAttackTime = 0f;
@@ -26,6 +27,7 @@ public class EnemyAI : MonoBehaviour
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
         pointOfIntrest.transform.parent = null;
+        startPos.transform.parent = null;
         StartCoroutine("Screams");
     }
 
@@ -35,19 +37,23 @@ public class EnemyAI : MonoBehaviour
         float distance = Vector2.Distance(transform.position, player.position);
         if (distance < sightRange)
         {
-            if (Physics2D.Linecast(transform.position, player.position, losMask).collider.tag == "Player")
+            if (Physics2D.Linecast(transform.position, player.position, losMask).collider.tag == "Player" && !attacking)
             {
                 destinationSetter.target = player;
                 pointOfIntrest.transform.position = player.position;
                 //if(Time.time >= nextAttackTime) Attack();
                 controller.SetBool("Moving", true);
             }
-            else controller.SetBool("Moving", false);
+
+            else
+            {
+                controller.SetBool("Moving", false);
+            }
         }
         else
         {
-            destinationSetter.target = pointOfIntrest.transform.position != Vector3.zero ? pointOfIntrest.transform : transform;
-            if (Vector3.Distance(transform.position, pointOfIntrest.transform.position) <= 1)
+            destinationSetter.target = pointOfIntrest.transform.position != Vector3.zero ? pointOfIntrest.transform : startPos;
+            if (Vector3.Distance(transform.position, pointOfIntrest.transform.position) <= 2)
             {
                 pointOfIntrest.transform.position = Vector3.zero;
                 controller.SetBool("Moving", false);
@@ -58,8 +64,10 @@ public class EnemyAI : MonoBehaviour
 
     IEnumerator Attack()
     {
-        Debug.Log("Attack");
+        if (attack.enabled) attack.enabled = false;
+        attack.enabled = true;
         controller.SetBool("Attacking", true);
+        controller.SetBool("Moving", false);
         attacking = true;
         attackHitbox.enabled = true;
         nextAttackTime = Time.time + timeBetweenAttacks;

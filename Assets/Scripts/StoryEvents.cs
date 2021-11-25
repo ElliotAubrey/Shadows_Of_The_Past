@@ -6,53 +6,23 @@ using FMODUnity;
 
 public class StoryEvents : MonoBehaviour
 {
-    [SerializeField] string[] messages;
     [SerializeField] GameObject[] thingsToDisable;
     [SerializeField] GameObject[] thingsToEnable;
     [SerializeField] StudioEventEmitter boilerSound;
 
-
-    TextMeshProUGUI messageUI;
     bool inTrigger = false;
-    int messageIndex = 0;
-    PlayerController controller;
-
-    private void Awake()
-    {
-        messageUI = GameObject.FindGameObjectWithTag("Message").GetComponent<TextMeshProUGUI>();
-        controller = FindObjectOfType<PlayerController>();
-    }
-
+    bool occured = false;
+    bool disabled = false;
     private void Update()
     {
-        if(inTrigger && messageUI.text != messages[messageIndex])
+        if (inTrigger && !occured)
         {
-            messageUI.text = messages[messageIndex] + " [Space]";
-            controller.canMove = false;
-            controller.SetVelocity(Vector2.zero);
-            Time.timeScale = 0;
-        }
-
-        if(inTrigger && Input.GetKeyDown(KeyCode.Space))
-        {
-            messageIndex++;
-            if(messageIndex >= messages.Length)
-            {
-                Destroy(gameObject);
-                messageUI.text = string.Empty;
-                controller.canMove = true;
-                Time.timeScale = 1;
-                for (int i = 0; i < thingsToDisable.Length; i++)
-                {
-                    thingsToDisable[i].SetActive(false);
-                }
-                for (int i = 0; i < thingsToEnable.Length; i++)
-                {
-                    thingsToEnable[i].SetActive(true);
-                }
-            }
+            StartCoroutine("BoilerExplosion");
+            boilerSound.enabled = true;
+            occured = true;
         }
     }
+
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -60,6 +30,21 @@ public class StoryEvents : MonoBehaviour
         {
             inTrigger = true;
         }
+    }
+
+    IEnumerator BoilerExplosion()
+    {
+        Debug.Log("Test");
+        yield return new WaitForSeconds(3.5f);
+        for (int i = 0; i < thingsToDisable.Length; i++)
+        {
+            thingsToDisable[i].SetActive(false);
+        }
+        for (int i = 0; i < thingsToEnable.Length; i++)
+        {
+            thingsToEnable[i].SetActive(true);
+        }
+
     }
 
 }

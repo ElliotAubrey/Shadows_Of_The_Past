@@ -15,16 +15,16 @@ public class PlayerLantern : MonoBehaviour
     [SerializeField] float maxFuel = 100f;
     [SerializeField] int spareFuel = 1;
     [SerializeField] float lossRate = 0.1f;
-    [SerializeField] SpriteRenderer[] fuelSprites;
+    [SerializeField] Sprite[] fuelSprites;
     [SerializeField] Image fuelImage;
     [SerializeField] TextMeshProUGUI spareFuelText;
-    [SerializeField] Texture2D cursor;
 
     public bool collected = false;
 
     float fuel;
     bool highIntensity = false;
     float lossAmount;
+
 
     private void Awake()
     {
@@ -34,7 +34,6 @@ public class PlayerLantern : MonoBehaviour
     }
     private void OnEnable()
     {
-        Cursor.SetCursor(cursor, Vector2.zero, CursorMode.Auto);
         IntensityInit();
     }
 
@@ -44,11 +43,11 @@ public class PlayerLantern : MonoBehaviour
         {
             FlipIntensity();
         }
-        if(fuel <= 80) fuelImage.sprite = fuelSprites[1].sprite;
-        else if(fuel <= 50) fuelImage.sprite = fuelSprites[2].sprite;
-        else if(fuel <= 20) fuelImage.sprite = fuelSprites[3].sprite;
-        else if(fuel == 0) fuelImage.sprite = fuelSprites[4].sprite;
-        else fuelImage.sprite = fuelSprites[0].sprite;
+        if(fuel <= 80) fuelImage.sprite = fuelSprites[1];
+        else if(fuel <= 50) fuelImage.sprite = fuelSprites[2];
+        else if(fuel <= 20) fuelImage.sprite = fuelSprites[3];
+        else if(fuel == 0) fuelImage.sprite = fuelSprites[4];
+        else fuelImage.sprite = fuelSprites[0];
         if (fuel <= 0)
         {
             if (spareFuel > 0)

@@ -9,7 +9,7 @@ public class EndRankingSystem : MonoBehaviour
 {
     [SerializeField] GameObject endScreen;
     [SerializeField] TextMeshProUGUI notesText, enemiesText, keysText, timeText, completionPercent;
-    
+
     Note[] notes;
     HealthSystem[] enemies;
     KeyCollection[] keys;
@@ -32,13 +32,13 @@ public class EndRankingSystem : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if(timerOn) elapsedTime += Time.deltaTime;
+        if (timerOn) elapsedTime += Time.deltaTime;
     }
     public void EnemyKilled()
     {
         enemiesNum++;
     }
-    
+
     [ContextMenu("Calc Result")]
     public void CalcResult()
     {
@@ -48,7 +48,7 @@ public class EndRankingSystem : MonoBehaviour
         {
             if (notes[i].GetRead()) noteNum++;
         }
-        notesText.text ="Notes Collected: " + noteNum.ToString() + " / " + notes.Length.ToString();
+        notesText.text = "Notes Collected: " + noteNum.ToString() + " / " + notes.Length.ToString();
         int e = enemies.Length - 1;
         enemiesText.text = "Enemies Killed: " + enemiesNum.ToString() + " / " + e.ToString();
         keysText.text = "Keys Collected: " + inventory.keys.Count + " / " + keys.Length.ToString();
@@ -75,6 +75,10 @@ public class EndRankingSystem : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player")) CalcResult();
+        if (collision.CompareTag("Player"))
+        {
+            CalcResult();
+            FindObjectOfType<MusicBehaviour>().StartMusic();
+        }
     }
 }

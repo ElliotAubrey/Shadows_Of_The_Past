@@ -11,6 +11,10 @@ TagManager:
   - Message
   - BaseEnemy
   - ShadowEnemy
+  - Carpet
+  - Wood
+  - Metal
+  - Transition
   layers:
   - Default
   - TransparentFX

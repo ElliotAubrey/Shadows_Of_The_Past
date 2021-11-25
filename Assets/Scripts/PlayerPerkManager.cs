@@ -50,6 +50,5 @@ public class PlayerPerkManager : MonoBehaviour
     {
         yield return new WaitForSeconds(0.5f);
         gun.canFire = true;
-        Debug.Log(gun.canFire);
     }
 }
